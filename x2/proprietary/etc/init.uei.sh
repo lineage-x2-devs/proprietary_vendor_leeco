@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/vendor/bin/sh
 
 UEIUSER=$(stat -c '%U' /data/data/com.uei.quicksetsdk.letv/)
 
@@ -7,7 +7,7 @@ if [ -n "$UEIUSER" ]; then
 
 		# Copy Settings file
         mkdir -p /data/data/com.uei.quicksetsdk.letv/files
-        cp /system/etc/UEISettings /data/data/com.uei.quicksetsdk.letv/files/Settings
+        cp /vendor/etc/UEISettings /data/data/com.uei.quicksetsdk.letv/files/Settings
 
 		# Set permissions
 		chmod 751 /data/data/com.uei.quicksetsdk.letv/
